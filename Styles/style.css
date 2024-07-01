@@ -1,4 +1,4 @@
-/* General Reset */
+General Reset
 * {
     margin: 0;
     padding: 0;
@@ -9,19 +9,19 @@ body {
     background-color: #F5E7B2; 
     color: #494343;
     font-family: 'Arial', sans-serif;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
-.container {
+.containe {
     width: 100%;
     max-width: 1200px;
-    height: 100%;
+    /* height: 90vh; */
     background: #fff;
-    padding: 20px;
+    padding: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     display: flex;
@@ -103,7 +103,6 @@ main {
 
 .links a {
     display: inline-block;
-    margin: 10px 0;
     color: #C40C0C; 
     text-decoration: none;
     padding: 10px 15px;
@@ -117,10 +116,13 @@ main {
 }
 
 /* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .container {
-        padding: 10px;
+@media only screen and (max-width: 600px) {
+    .containe {
+        /* padding: 20px 30px 10px 30px; */
+        height: 90%;
     }
+
+    
 
     .header {
         flex-direction: column;
@@ -153,42 +155,9 @@ main {
     }
 
     .links a {
-        padding: 8px 12px;
-        font-size: 0.9em;
+        padding-right: 10px;
+        font-size: 0.75em;
     }
 }
 
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
 
-    .container {
-        padding: 10px;
-    }
-
-    .profile-info h1 {
-        font-size: 1.2em;
-    }
-
-    .profile-info p {
-        font-size: 0.8em;
-    }
-
-    .goals {
-        padding: 10px;
-    }
-
-    .goals h2 {
-        font-size: 1.2em;
-    }
-
-    .goals li {
-        font-size: 0.9em;
-    }
-
-    .links a {
-        padding: 6px 10px;
-        font-size: 0.8em;
-    }
-}
